@@ -1,3 +1,8 @@
+*.classpath
+*.project
+*.DS_Store
+*.metadata
+
 # Compiled class file
 *.class
 
