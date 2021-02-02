@@ -1,78 +1,122 @@
 class Tableau {
 
-  public static void main(String[] args) {
-      /**
-      Les diverses manieres de déclaration d'un tableau.
-      **/
+//	private double[] quickSort(double[] array, int low, int high) {
+//
+//		if (low < high) {
+//
+//			double pivot = array[high];
+//			int i=high;
+//			double aux=0;
+//
+//			for (int j = low; i < high; i++) {
+//				if(array[j]<pivot) {
+//					
+//				}
+//			}
+//		}
+//
+//		return array;
+//	}
+	
+	
+	
+	
 
-      double[] doubleArray;
-      double [] doubleArray1;
-      double doubleArray2[];
-      double doubleArray3 [];
+//	algorithm quicksort(A, lo, hi) is
+//    if lo < hi then
+//        p := partition(A, lo, hi)
+//        quicksort(A, lo, p - 1)
+//        quicksort(A, p + 1, hi)
+//
+//algorithm partition(A, lo, hi) is
+//    pivot := A[hi]
+//    i := lo
+//    for j := lo to hi do
+//        if A[j] < pivot then
+//            swap A[i] with A[j]
+//            i := i + 1
+//    swap A[i] with A[hi]
+//    return i
+//	
+	public static void main(String[] args) {
+		/**
+		 * Les diverses manieres de déclaration d'un tableau.
+		 **/
 
-      /**
-      Une simple déclaration de tableau ne permet pas d'y acceder.
-      Décommenter la ligne suivante, voir ce qui se passe à la compilation
-      **/
+		double[] doubleArray;
+		double[] doubleArray1;
+		double doubleArray2[];
+		double doubleArray3[];
 
-      //System.out.println(stringArray[0]);
+		/**
+		 * Une simple déclaration de tableau ne permet pas d'y acceder. Décommenter la
+		 * ligne suivante, voir ce qui se passe à la compilation
+		 **/
 
-      /**
-      Instanciation du tableau precedemment déclaré.
-      Dans l'instruction ecrite ci-dessous, on instancie un tableau de 3 elements
-      **/
+		// System.out.println(stringArray[0]);
 
-      doubleArray = new double[3];
+		/**
+		 * Instanciation du tableau precedemment déclaré. Dans l'instruction ecrite
+		 * ci-dessous, on instancie un tableau de 3 elements
+		 **/
 
-      /**
-      Ecrire ci-dessous une instruction qui permet d'acceder à un element du tableau
-      Que remarquez-vous ?
-      **/
+		doubleArray = new double[3];
 
-      // Todo ...
+		/**
+		 * Ecrire ci-dessous une instruction qui permet d'acceder à un element du
+		 * tableau Que remarquez-vous ? -> Valeur initiale =0
+		 **/
 
-      /**
-      Changement d'un emplacement du tableau
-      **/
+		// Todo ...
+		System.out.println(doubleArray[0]);
 
-      doubleArray[0] = 1.0;
+		/**
+		 * Changement d'un emplacement du tableau
+		 **/
 
-      /**
-      En Java, il n'est pas possible d'acceder à un emplacement qui depasse n-1 (où n est la taille du tableau)
-      Décommenter l'instruction suivante, voir ce qui se passe à l'execution
-      **/
+		doubleArray[0] = 1.0;
 
-      //doubleArray[3] = 2.0;
+		/**
+		 * En Java, il n'est pas possible d'acceder à un emplacement qui depasse n-1 (où
+		 * n est la taille du tableau) Décommenter l'instruction suivante, voir ce qui
+		 * se passe à l'execution
+		 **/
 
-      /**
-      Autres manieres d'instanciation
-      **/
+//      doubleArray[3] = 2.0;
 
-      int[] intArray = new int[] {42, 55, 99};
+		/**
+		 * Autres manieres d'instanciation
+		 **/
 
-      int[] intArrayAnonymous = {42, 55, 99, 100};
+		int[] intArray = new int[] { 42, 55, 99 };
 
-      //**************//
+		int[] intArrayAnonymous = { 42, 55, 99, 100 };
 
-      System.out.println("Taille du tableau intArrayAnonymous : " + intArrayAnonymous.length); // Avoir la taille du tableau
+		// **************//
 
-      /**
-      Parcourir un tableau et afficher les elements
-      **/
+		// Quicksort
 
-      for (int index = 0; index < intArrayAnonymous.length ; index++) {
-        if(index == intArrayAnonymous.length - 1) {
-            System.out.println(intArrayAnonymous[index]);
-        } else {
-          System.out.print(intArrayAnonymous[index] + ", ");
-        }
-      }
+		System.out.println("Taille du tableau intArrayAnonymous : " + intArrayAnonymous.length); // Avoir la taille du
+																									// tableau
 
-      /***** Ou encore *****/
+		/**
+		 * Parcourir un tableau et afficher les elements
+		 **/
 
-      for (int value : intArrayAnonymous) {
-        System.out.println(value);
-      }
+		for (int index = 0; index < intArrayAnonymous.length; index++) {
+			if (index == intArrayAnonymous.length - 1) {
+				System.out.println(intArrayAnonymous[index]);
+			} else {
+				System.out.print(intArrayAnonymous[index] + ", ");
+			}
+		}
 
-  }
+		/***** Ou encore *****/
+
+		for (int value : intArrayAnonymous) {
+			System.out.println(value);
+		}
+
+	}
+
 }
